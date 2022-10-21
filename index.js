@@ -67,6 +67,7 @@ function cellClicked() {
   console.log(currentPlayer);
   updateCell(value);
   checkWinner();
+  cells[value].removeEventListener("click", cellClicked);
 }
 
 function updateCell(value) {
